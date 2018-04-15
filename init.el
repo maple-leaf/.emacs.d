@@ -27,6 +27,8 @@
                 magit
                 evil-magit
 
+                multi-term
+
                 ;; --- Themes ---
                 solarized-theme
                 monokai-theme

@@ -9,6 +9,8 @@
     ; search and replace
     "s" 'swiper
 
+    "t" 'multi-term
+
     ; project
     "p p" 'counsel-projectile-switch-project
     "p f" 'counsel-projectile-find-file
