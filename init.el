@@ -15,6 +15,7 @@
  ;; Add Packages
  (defvar my/packages '(
                 restart-emacs
+                use-package
                 ;; --- Auto-completion ---
                 company
                 company-quickhelp
@@ -30,7 +31,6 @@
 
                 ; version control
                 magit
-                evil-magit
 
                 multi-term
 
@@ -45,6 +45,8 @@
                 ; evil vim
                 evil
                 evil-leader
+                evil-magit
+                evil-surround
 
 
                 ; web dev
@@ -93,6 +95,10 @@
 ; evil
 (global-evil-leader-mode)
 (evil-mode 1)
+(use-package evil-surround
+  :ensure t
+  :config
+  (global-evil-surround-mode 1))
 
 
 ; company mode
