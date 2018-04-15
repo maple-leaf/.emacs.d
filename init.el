@@ -19,6 +19,7 @@
                 counsel
                 smartparens
                 exec-path-from-shell
+                linum-relative
 
                 ; search and replace
                 swiper
@@ -120,7 +121,11 @@
 (add-hook 'magit-mode-hook 'evil-local-mode)
 (add-hook 'git-rebase-mode-hook 'evil-local-mode)
 
+; linum-relative
+(linum-relative-global-mode)
 
+
+; ===========================
 (require 'helper)
 (require 'package)
 (require 'package-config)
