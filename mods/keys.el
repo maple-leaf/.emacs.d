@@ -9,6 +9,8 @@
     ; search and replace
     "s" 'swiper
 
+    "TAB" 'spacemaces/alternate-buffer
+
     "t" 'multi-term
 
     ; project

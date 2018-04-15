@@ -6,6 +6,7 @@
 
 
 (require 'emacs-config)
+(require 'helper)
 
 
  ;; cl - Common Lisp Extension
@@ -137,7 +138,6 @@
                              '("\\.jsx?\\'" . prettier-eslint-mode))))
 
 ; ===========================
-(require 'helper)
 (require 'package)
 (require 'package-config)
 (require 'ui)
