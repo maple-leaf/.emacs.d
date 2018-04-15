@@ -1,8 +1,7 @@
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/mods")
 
-; https://github.com/ProjectFrank/prettier-eslint-emacs.git
-(add-to-list 'load-path "~/.emacs.d/github/prettier-eslint-emacs")
+(add-to-list 'load-path "~/.emacs.d/el-get")
 
 
 (require 'emacs-config)
@@ -16,7 +15,7 @@
  (defvar my/packages '(
                 restart-emacs
                 use-package
-                pallet
+                el-get
                 ;; --- Auto-completion ---
                 company
                 company-quickhelp
@@ -65,6 +64,8 @@
                 lsp-javascript-typescript
                 lsp-vue
                 ) "Default packages")
+
+(el-get-bundle ProjectFrank/prettier-eslint-emacs)
 
  (setq package-selected-packages my/packages)
 
