@@ -16,6 +16,7 @@
  (defvar my/packages '(
                 restart-emacs
                 use-package
+                pallet
                 ;; --- Auto-completion ---
                 company
                 company-quickhelp
