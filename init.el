@@ -1,6 +1,9 @@
 (package-initialize)
 (add-to-list 'load-path "~/.emacs.d/mods")
 
+; https://github.com/ProjectFrank/prettier-eslint-emacs.git
+(add-to-list 'load-path "~/.emacs.d/github/prettier-eslint-emacs")
+
 
 (require 'emacs-config)
 
@@ -50,6 +53,7 @@
                 nodejs-repl
                 vue-mode
                 typescript-mode
+                ; prettier-js
 
                 ;; lsp
                 lsp-mode
@@ -124,6 +128,13 @@
 ; linum-relative
 (linum-relative-global-mode)
 
+
+; prettier-eslint
+(require 'prettier-eslint)
+(add-hook 'js2-mode-hook 'prettier-eslint-mode)
+(add-hook 'web-mode-hook #'(lambda ()
+                            (enable-minor-mode
+                             '("\\.jsx?\\'" . prettier-eslint-mode))))
 
 ; ===========================
 (require 'helper)
