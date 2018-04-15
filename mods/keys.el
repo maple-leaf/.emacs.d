@@ -19,11 +19,16 @@
     "/" 'counsel-projectile-ag
 
     ; evil window
-    "w o" 'delete-other-window
+    "w o" 'delete-other-windows
     "w j" 'evil-window-down
     "w k" 'evil-window-up
     "w l" 'evil-window-left
+    ; TODO split and jump to
     "w h" 'evil-window-right
+    "w /" 'evil-window-split
+    "w v" 'evil-window-vsplit
+    "w d" 'evil-window-delete
+    "w TAB" 'spacemaces/alternate-window
 
     ; magit
     "g s" 'magit-status
