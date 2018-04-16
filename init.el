@@ -66,9 +66,12 @@
                 company-lsp
                 lsp-javascript-typescript
                 lsp-vue
+
+                elixir-mode
                 ) "Default packages")
 
 (el-get-bundle ProjectFrank/prettier-eslint-emacs)
+(el-get-bundle rodrigues/lsp-elixir)
 
  (setq package-selected-packages my/packages)
 
@@ -141,6 +144,7 @@
 ; linum-relative
 (linum-relative-global-mode)
 
+(add-hook 'elixir-mode-hook #'lsp-elixir-enable)
 
 ; prettier-eslint
 (require 'prettier-eslint)
