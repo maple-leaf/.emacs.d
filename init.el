@@ -56,6 +56,7 @@
                 nodejs-repl
                 vue-mode
                 typescript-mode
+                rjsx-mode ; jsx support
                 less-css-mode
                 ssass-mode
                 ; prettier-js
