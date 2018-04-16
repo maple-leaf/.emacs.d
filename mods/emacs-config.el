@@ -11,6 +11,8 @@
 ; 高亮当前行
 (global-hl-line-mode 1)
 
+(setq frame-title-format '((:eval default-directory)))
+
 ; code folding START
 (add-hook 'prog-mode-hook 'hs-minor-mode)
 (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
