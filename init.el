@@ -59,6 +59,7 @@
                 rjsx-mode ; jsx support
                 less-css-mode
                 ssass-mode
+                ; https://github.com/prettier/prettier-emacs/issues/31#issuecomment-381503805
                 ; prettier-js
 
                 ;; lsp
