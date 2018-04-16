@@ -56,6 +56,8 @@
                 nodejs-repl
                 vue-mode
                 typescript-mode
+                less-css-mode
+                ssass-mode
                 ; prettier-js
 
                 ;; lsp
@@ -90,7 +92,8 @@
 (setq auto-mode-alist
       (append
        '(("\\.js\\'" . js2-mode)
-         ("\\.html\\'" . web-mode))
+         ("\\.html\\'" . web-mode)
+         ("\\.phtml\\'" . web-mode))
        auto-mode-alist))
 
 

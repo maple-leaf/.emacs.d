@@ -9,7 +9,7 @@
     ; search and replace
     "s" 'swiper
 
-    "TAB" 'spacemaces/alternate-buffer
+    "TAB" 'spacemacs/alternate-buffer
 
     "t" 'multi-term
 
@@ -30,7 +30,7 @@
     "w /" 'evil-window-split
     "w v" 'evil-window-vsplit
     "w d" 'evil-window-delete
-    "w TAB" 'spacemaces/alternate-window
+    "w TAB" 'spacemacs/alternate-window
 
     ; magit
     "g s" 'magit-status

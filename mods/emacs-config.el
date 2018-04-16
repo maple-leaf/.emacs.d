@@ -5,8 +5,24 @@
 ; 当你选中一段文字 之后输入一个字符会替换掉你选中部分的文字。
 (delete-selection-mode 1)
 
+; use spaces instead of tabs when indenting
+(setq-default indent-tabs-mode nil)
+
 ; 高亮当前行
 (global-hl-line-mode 1)
+
+; code folding START
+(add-hook 'prog-mode-hook 'hs-minor-mode)
+(add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(add-hook 'less-css-mode-hook 'hs-minor-mode)
+(add-hook 'ssass-mode-hook 'hs-minor-mode)
+(add-hook 'js-mode-hook'hs-minor-mode)
+(add-hook 'js2-mode-hook 'hs-minor-mode)
+(add-hook 'typescript-mode-hook 'hs-minor-mode)
+(add-hook 'vue-mode-hook 'hs-minor-mode)
+(add-hook 'web-mode-hook 'hs-minor-mode)
+(add-hook 'elixir-mode-hook 'hs-minor-mode)
+; code folding END
 
 (abbrev-mode t)
 
